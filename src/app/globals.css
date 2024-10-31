@@ -13,4 +13,8 @@ body {
     background: var(--background);
 }
 
+.navbar {
+    @apply grid grid-rows-2 items-center w-[300px] text-center max-h-screen;
+}
+
   
