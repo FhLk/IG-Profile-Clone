@@ -5,8 +5,12 @@ import React, { FC } from 'react'
 const NavbarLeft : FC = () => {
   return (
     <div className='navbar'>
-      <Link href={"/"}>App Picture</Link>
-      <Link href={"/"}>Add Video</Link>
+      <Link href={"/"} className=''>
+        <button className='bg-white h-[150px] w-[150px] rounded-full'>App Picture</button>
+      </Link>
+      <Link href={"/"} className=''>
+        <button className='bg-white h-[150px] w-[150px] rounded-full'>App Video</button>
+      </Link>
     </div>
   )
 }
