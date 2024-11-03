@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React, { FC } from 'react'
 
 const Picture : FC = () => {
@@ -7,7 +8,7 @@ const Picture : FC = () => {
         {/* <img className='absolute right-3 top-3' src="./list.svg" alt="video" height={40} width={40}/> */}
         {/* <img className='absolute right-3 top-3' src="./video.svg" alt="video" height={40} width={40}/> */}
         {/* <img className='absolute right-3 top-3' src="./pin.svg" alt="pin" height={40} width={40}/> */}
-        <a href="/" className=" absolute w-full h-full top-0 left-0 bg-black opacity-0 z-10 transition-opacity duration-300 hover:opacity-30 "></a>
+        <Link href="/" className=" absolute w-full h-full top-0 left-0 bg-black opacity-0 z-10 transition-opacity duration-300 hover:opacity-30 "></Link>
     </div>
   )
 }
