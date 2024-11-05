@@ -1,10 +1,14 @@
 import Link from 'next/link'
 import React, { FC } from 'react'
 
-const Picture : FC = () => {
+interface GalleryData {
+  src : string
+}
+
+const Picture : FC<GalleryData> = ({ src }) => {
   return (
-    <div className="relative">
-        <img className='relative object-cover h-[300px] w-[300px]' src="./First-Pic.jpg" alt="example"/>
+    <div className="relative w-full">
+        <img className='relative object-cover min-w-full max-h-[300px] min-h-[300px]' src={src} alt="example"/>
         {/* <img className='absolute right-3 top-3' src="./list.svg" alt="video" height={40} width={40}/> */}
         {/* <img className='absolute right-3 top-3' src="./video.svg" alt="video" height={40} width={40}/> */}
         {/* <img className='absolute right-3 top-3' src="./pin.svg" alt="pin" height={40} width={40}/> */}

@@ -14,7 +14,11 @@ body {
 }
 
 .navbar {
-    @apply grid grid-rows-2 items-center w-[300px] text-center max-h-screen;
+    @apply absolute top-1/2 right-0 w-[300px] text-center max-h-screen;
+}
+
+.filter-btn {
+    @apply w-full h-full flex justify-center items-center py-1 duration-100 hover:opacity-20;
 }
 
   
